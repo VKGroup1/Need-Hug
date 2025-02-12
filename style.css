@@ -1,0 +1,60 @@
+body {
+    background-color: #f7e6f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.heading {
+    font-size: 36px;
+    color: #9b2d91;
+    margin-bottom: 20px;
+}
+
+.hug-animation .teddy {
+    width: 200px;
+    animation: hug-animation 3s infinite;
+}
+
+@keyframes hug-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.floating-hearts img {
+    position: absolute;
+    animation: float-hearts 5s ease-in-out infinite;
+    width: 50px;
+}
+
+@keyframes float-hearts {
+    0% { top: 100%; left: 30%; }
+    50% { top: 50%; left: 50%; }
+    100% { top: 0%; left: 70%; }
+}
+
+.love-message {
+    font-size: 24px;
+    color: #9b2d91;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.handwritten-message {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #9b2d91;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
